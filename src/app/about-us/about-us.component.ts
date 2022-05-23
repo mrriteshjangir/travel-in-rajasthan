@@ -12,16 +12,4 @@ export class AboutUsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  forDiv():void{
-    alert('Div clicked');
-  }
-
-  forBtn():void{
-    alert('Btn clicked');
-  }
-
-  forInt(age:any){
-    console.log(age);   
-  }
-
 }

@@ -15,10 +15,15 @@ export class ContactUsComponent implements OnInit {
     
   }
 
-  myName: string = 'Ritesh';
+  userName = '';
+  userEmail = '';
 
-  myFuction(): void{
-    alert("Hello " + this.myName);
+  newName(event:any):any {
+    this.userName = (event.target as HTMLInputElement).value
+  }
+
+  newEmail(event:any):any {
+    this.userEmail = (event.target as HTMLInputElement).value
   }
 
 }
