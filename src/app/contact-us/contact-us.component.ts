@@ -7,23 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactUsComponent implements OnInit {
 
-  constructor() { 
-    
-  }
+  constructor() {  }
+  
+  ngOnInit(): void { }
 
-  ngOnInit(): void {
-    
-  }
-
-  userName = '';
-  userEmail = '';
-
-  newName(event:any):any {
-    this.userName = (event.target as HTMLInputElement).value
-  }
-
-  newEmail(event:any):any {
-    this.userEmail = (event.target as HTMLInputElement).value
-  }
+  userName:string = '';
+  userEmail:string = '';
 
 }

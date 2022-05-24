@@ -3,14 +3,13 @@
     <div class="row mt-5">
 
         <div class="mb-3">
-            <input type="text" class="form-control mb-3" placeholder="Enter Name" (input)="newName($event)">
+            <input type="text" class="form-control mb-3" placeholder="Enter Name" [(ngModel)]="userName" />
         </div>
+
         <div class="mb-3">
-            <input type="email" class="form-control mb-3" placeholder="Enter Email" (input)="newEmail($event)">
+            <input type="email" class="form-control mb-3" placeholder="Enter Email" [(ngModel)]="userEmail" />
         </div>
-        <div class="mb-3">
-            <input type="number" class="form-control mb-3" placeholder="Enter Contact">
-        </div>
+        
         
         <div class="bg-light p-4 mb-3 rounded">
             <h3>Name : <span class="text-danger">{{userName}}</span></h3>
