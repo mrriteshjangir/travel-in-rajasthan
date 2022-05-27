@@ -11,7 +11,19 @@ export class ContactUsComponent implements OnInit {
   
   ngOnInit(): void { }
 
-  userName:string = '';
+  private _userName:string = '';
+
+  // getter method : to get value from database
+  get userName():string{
+    return this.userName;
+  }
+
+  // setter method : to save/set value to database
+  set userName(val:string){
+    this.userName = val;
+  }
+
   userEmail:string = '';
+  userMob:Number = NaN;
 
 }
